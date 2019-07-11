@@ -1,8 +1,62 @@
 @import 'core/variables';
 
-body {
-	background: url('../images/logo-adalab-80px.png') center center no-repeat $color-white;
-	margin: 0;
-	height: 100vh;
-	font-family: $font-family-secundary;
+* {
+	box-sizing: border-box;
 }
+
+body {
+	margin: auto;
+}
+
+.page__header {
+	background-image: url("../images/cover.jpg");
+	background-size: cover;
+	height: 100%;
+	width: 100vw;
+}
+
+.header__nav {
+	height: 44px;
+	width: 44px;
+	background-color:$color-ocean_blue;
+	background-image: url(../icons/ico-menu.svg);
+	background-repeat: no-repeat;
+	background-position: center; 
+	z-index: 1;
+	position: fixed;
+}
+.header__hero {
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 278px;
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-bottom: 53px;
+	&-title {
+		font-family: $font-family-primary;
+		font-size: 42px;
+		line-height: 55px;
+		text-align: center;
+		color: $color-white;
+		margin: 0;
+	}
+	&-decription {
+		font-family: $font-family-secundary;
+		font-size: 16px;
+		color: $color-white;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+}
+.header__buttom {
+	height: 45px;
+	width: 45px;
+	background-color: $color-white;
+	border-radius: 50%;
+	background-image: url(../icons/ico-scroll-down.svg);
+	background-repeat: no-repeat;
+	background-position: center; 
+	margin-top: 45px;
+}
+
