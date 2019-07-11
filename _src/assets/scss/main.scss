@@ -88,6 +88,8 @@ body {
 
 // @import 'core/header'; aqui terminamos de copiar el partial del header y lo enlazamos arriba al main
 
+
+// @import 'core/main'; aqui copiamos el partial del header y lo enlazamos arriba al main
 .page__main {
 	&-tips {
 		height: 376px;
@@ -158,7 +160,7 @@ body {
 			&-title {
 				font-family: $font-family-primary;
 				font-size: 18px;
-				line-height: 30px;
+				line-height: 45px;
 				text-align: center;
 				margin: 0;
 			}
@@ -167,7 +169,7 @@ body {
 				font-size: 18px;
 				line-height: 30px;
 				text-align: center;
-				margin: 0;
+				
 			}	
 		}
 		&-container1{
@@ -176,7 +178,7 @@ body {
 		&-container2{
 			grid-row: span 1;
 		}
-		&-container2{
+		&-container3{
 			grid-row: span 1;
 		}
 		&-button {
@@ -212,7 +214,6 @@ body {
 		}
 		&-tips-content {
 			font-size: 18px;
-			line-height: 20px;
 			margin-top: 30px;
 		}
 		&-tips-button {
@@ -222,10 +223,47 @@ body {
 	}
 	.page__main {
 		&-reasons {
-
+			height: 397px;
+			padding: 30px 37px 60px 37px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			&-claim {
+				font-size: 26px;
+				line-height: 45px;
+				margin-top: 0;
+			}
+			&-container {
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+				grid-template-rows: 112px;
+				grid-gap: 27.7px;
+				width: 693px;
+				&-title {
+					font-size: 24px;
+					margin-bottom: 14px;
+				}
+				&-description {
+					font-size: 20px;
+					margin: 0;
+				}
+			}
+			&-button {
+				width: 210px;
+				margin-top: 60px;
+			}
+			&-container1 {
+				grid-column: span 1;
+			}
+			&-container2 {
+				grid-column: span 1;
+			}
+			&-container3	{
+				grid-column: span 1;
+			}	
 		}
 	}
-}
+
 
 @media all and (min-width:1280px) {
 	.page__main {
@@ -249,4 +287,47 @@ body {
 			width: 160px;
 		}
 	}
+
+	.page__main {
+		&-reasons {
+			height: 427px;
+			padding: 60px 83px 60px 83px;
+			&-claim {
+				font-size: 32px;
+				line-height: 45px;
+				margin-top: 0;
+			}
+			&-container {
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+				grid-template-rows: 112px;
+				grid-gap: 30px;
+				width: 1110px;
+				&-title {
+					font-size: 24px;
+					margin-bottom: 14px;
+				}
+				&-description {
+					font-size: 20px;
+					margin: 0;
+				}
+			}
+			&-button {
+				width: 255px;
+				margin-top: 60px;
+			}
+			&-container1 {
+				grid-column: span 1;
+			}
+			&-container2 {
+				grid-column: span 1;
+			}
+			&-container3 {
+				grid-column: span 1;
+			}	
+		}
+		}
+	}
 }
+
+// @import 'core/main'; aqui terminamos de copiar el partial del header y lo enlazamos arriba al main
