@@ -121,8 +121,8 @@ body {
 		height: 45px;
 		width: 76px;
 		border-radius: 22.5px;
-		border: 2px solid $color-orange;
 		background-color: $color-white;
+		border: 2px solid $color-orange;
 		font-family: $font-family-secundary;
 		font-size: 20px;
 		color: $color-orange;
@@ -169,7 +169,7 @@ body {
 				font-size: 18px;
 				line-height: 30px;
 				text-align: center;
-				
+				margin: 0;
 			}	
 		}
 		&-container1{
@@ -346,6 +346,7 @@ body {
 	font-family: $font-family-secundary;
 	line-height: 30px;
 	color: $color-white;
+	margin-bottom: 0;
 	&-link {
 		color: $color-white;
 		text-decoration: none;
@@ -372,12 +373,22 @@ body {
 		background-repeat: no-repeat;
 		background-position: center;
 		z-index: 1;
-		margin-bottom: 470px;
 	}
 	&-buttom-link {
 		height: 45px;
 		position: absolute;
 		transform: translateY(-52px);
+		animation-duration: 3s;
+		animation-name: link;
+		animation-iteration-count: infinite;
+	}
+	@keyframes link {
+		from {
+			transform: translateY(-52px) rotate(180deg);
+		}
+		to {
+			transform: translateY(-52px) rotate(360deg);
+		}
 	}
 }
 
@@ -401,6 +412,9 @@ body {
 		}
 		&-copyright {
 		margin-top: 15px;
+		}
+		&-buttom-link {
+			transform: translateY(-80px);
 		}
 	}
 }
