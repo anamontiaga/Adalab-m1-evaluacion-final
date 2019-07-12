@@ -108,7 +108,6 @@
 			}
 		}
 	}
-
 }
 
 @media all and (min-width:768px) {
@@ -128,7 +127,8 @@
 			height: 45px;
 			width: 91px;
 		}
-	}
+    }
+    
 	.page__main {
 		&-reasons {
 			height: 397px;
@@ -171,7 +171,6 @@
 			}	
 		}
 	}
-
 
 @media all and (min-width:1280px) {
 	.page__main {
@@ -234,6 +233,6 @@
 				grid-column: span 1;
 			}	
 		}
-		}
+        }
 	}
 }
