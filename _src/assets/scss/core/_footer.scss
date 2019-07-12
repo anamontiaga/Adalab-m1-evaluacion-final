@@ -1,0 +1,96 @@
+
+// @import 'core/footer'; aqui copiamos el partial del header y lo enlazamos arriba al main
+
+.page__footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	background-color: $color-dark_blue;
+	height: 465px;
+	padding: 30px 86px 45px 86px;
+	font-family: $font-family-secundary;
+	line-height: 30px;
+	color: $color-white;
+	margin-bottom: 0;
+	&-link {
+		color: $color-white;
+		text-decoration: none;
+	}
+	&-menu-list, &-socialmedia-list {
+		list-style: none;
+		font-size: 16px;
+		line-height: 30px;
+		padding-left: 0;
+		margin-bottom: 30px;
+	}
+	&-copyright-year, &-copyright-company {
+		margin:0;
+	}
+	&-heart {
+		color: $color-orange;
+	}
+	&-buttom {
+		height: 45px;
+		width: 45px;
+		background-color: $color-white;
+		border-radius: 50%;
+		background-image: url(../icons/ico-arrow.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+		z-index: 1;
+	}
+	&-buttom-link {
+		height: 45px;
+		position: absolute;
+		transform: translateY(-52px);
+		animation-duration: 3s;
+		animation-name: link;
+		animation-iteration-count: infinite;
+	}
+	@keyframes link {
+		from {
+			transform: translateY(-52px) rotate(180deg);
+		}
+		to {
+			transform: translateY(-52px) rotate(360deg);
+		}
+	}
+}
+
+@media all and (min-width:768px) {
+	.page__footer {
+		height: 240px;
+		padding: 45px 39px;
+		&-issues {
+			width: 690px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			line-height: 30px;
+			text-align: left;
+		}
+		&-menu {
+			order: 1;
+		}
+		&-socialmedia {
+			order: 2;
+		}
+		&-copyright {
+		margin-top: 15px;
+		}
+		&-buttom-link {
+			transform: translateY(-80px);
+		}
+	}
+}
+
+@media all and (min-width:1280px) {
+	.page__footer {
+		padding: 45px 370px;
+		&-issues {
+			width: 540px;
+		}
+	}
+}
+// @import 'core/footer'; aqui terminamos de copiar el partial del footer y lo enlazamos arriba al main
