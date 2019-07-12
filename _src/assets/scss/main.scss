@@ -379,5 +379,38 @@ body {
 		position: absolute;
 		transform: translateY(-52px);
 	}
-	
 }
+
+@media all and (min-width:768px) {
+	.page__footer {
+		height: 240px;
+		padding: 45px 39px;
+		&-issues {
+			width: 690px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			line-height: 30px;
+			text-align: left;
+		}
+		&-menu {
+			order: 1;
+		}
+		&-socialmedia {
+			order: 2;
+		}
+		&-copyright {
+		margin-top: 15px;
+		}
+	}
+}
+
+@media all and (min-width:1280px) {
+	.page__footer {
+		padding: 45px 370px;
+		&-issues {
+			width: 540px;
+		}
+	}
+}
+// @import 'core/footer'; aqui terminamos de copiar el partial del footer y lo enlazamos arriba al main
