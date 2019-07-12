@@ -1,6 +1,3 @@
-
-// @import 'core/footer'; aqui copiamos el partial del header y lo enlazamos arriba al main
-
 .page__footer {
 	display: flex;
 	flex-direction: column;
@@ -43,19 +40,11 @@
 	&-buttom-link {
 		height: 45px;
 		position: absolute;
-		transform: translateY(-52px);
 		animation-duration: 3s;
 		animation-name: link;
 		animation-iteration-count: infinite;
 	}
-	@keyframes link {
-		from {
-			transform: translateY(-52px) rotate(180deg);
-		}
-		to {
-			transform: translateY(-52px) rotate(360deg);
-		}
-	}
+
 }
 
 @media all and (min-width:768px) {
@@ -80,7 +69,7 @@
 		margin-top: 15px;
 		}
 		&-buttom-link {
-			transform: translateY(-80px);
+			animation-name: link-tablet;
 		}
 	}
 }
@@ -93,4 +82,21 @@
 		}
 	}
 }
-// @import 'core/footer'; aqui terminamos de copiar el partial del footer y lo enlazamos arriba al main
+
+@keyframes link {
+    from {
+        transform: translateY(-52px) rotate(180deg);
+    }
+    to {
+        transform: translateY(-52px) rotate(360deg);
+    }
+}
+
+@keyframes link-tablet {
+    from {
+        transform: translateY(-70px) rotate(180deg);
+    }
+    to {
+        transform: translateY(-70px) rotate(360deg);
+    }
+}
