@@ -331,3 +331,53 @@ body {
 }
 
 // @import 'core/main'; aqui terminamos de copiar el partial del header y lo enlazamos arriba al main
+
+
+// @import 'core/footer'; aqui copiamos el partial del header y lo enlazamos arriba al main
+
+.page__footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	background-color: $color-dark_blue;
+	height: 465px;
+	padding: 30px 86px 45px 86px;
+	font-family: $font-family-secundary;
+	line-height: 30px;
+	color: $color-white;
+	&-link {
+		color: $color-white;
+		text-decoration: none;
+	}
+	&-menu-list, &-socialmedia-list {
+		list-style: none;
+		font-size: 16px;
+		line-height: 30px;
+		padding-left: 0;
+		margin-bottom: 30px;
+	}
+	&-copyright-year, &-copyright-company {
+		margin:0;
+	}
+	&-heart {
+		color: $color-orange;
+	}
+	&-buttom {
+		height: 45px;
+		width: 45px;
+		background-color: $color-white;
+		border-radius: 50%;
+		background-image: url(../icons/ico-arrow.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+		z-index: 1;
+		margin-bottom: 470px;
+	}
+	&-buttom-link {
+		height: 45px;
+		position: absolute;
+		transform: translateY(-52px);
+	}
+	
+}
