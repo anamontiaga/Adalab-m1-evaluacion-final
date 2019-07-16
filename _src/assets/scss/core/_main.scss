@@ -63,7 +63,7 @@
 			display: grid;
 			grid-template-columns: 1fr;
 			grid-template-rows: 93px 93px 93px;
-			grid-gap: 45px;
+			grid-gap: 20px;
 			width: 184px;
 			&-title {
 				font-family: $font-family-primary;
@@ -93,18 +93,18 @@
 			height: 45px;
 			width: 184px;
 			border-radius: 22.5px;
-			background-color: $color-orange;
-			color: $color-white;
+			background-color: $color-white;
+			color: $color-orange;
 			font-family: $font-family-secundary;
 			font-size: 20px;
 			line-height: 45px;
 			text-align: center;
-			margin-top: 45px;
+			margin-top: 20px;
+			border: solid 2px $color-orange;
 			&:hover {
 				background-color: $color-white;
 				color: $color-orange;
 				transition: ease 1s;
-				border: solid 2px $color-orange;
 			}
 		}
 	}

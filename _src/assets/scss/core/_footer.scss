@@ -21,9 +21,20 @@
 		padding-left: 0;
 		margin-bottom: 30px;
 	}
+
+	&-copyright {
+		display: flex;
+		flex-direction: column;
+	}
+
 	&-copyright-year, &-copyright-company {
 		margin:0;
 	}
+
+	&-copyright-year {
+		order: 1;
+	}
+
 	&-heart {
 		color: $color-orange;
 	}
@@ -36,6 +47,7 @@
 		background-repeat: no-repeat;
 		background-position: center;
 		z-index: 1;
+		visibility: hidden;
 	}
 	&-buttom-link {
 		height: 45px;
@@ -69,6 +81,9 @@
 		}
 		&-buttom-link {
 			animation-name: link-tablet;
+		}
+		&-buttom {
+			visibility: visible;
 		}
 	}
 }
